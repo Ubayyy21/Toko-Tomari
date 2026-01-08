@@ -1,10 +1,5 @@
-// assets/js/script.js
-
-// assets/js/script.js - VERSI DENGAN DEBUG
-
 console.log("✅ JavaScript berjalan!");
 
-// Function to update greeting based on time
 function updateGreeting() {
     console.log("🕐 updateGreeting() dipanggil");
     
