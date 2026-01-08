@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Toko Tomari</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <style>
+     
+        .navbar {
+            background-color: #198754 !important; 
+        }
+        
+        .navbar-brand,
+        .navbar-brand span,
+        .nav-link,
+        .nav-link:hover,
+        .nav-link.active {
+            color: white !important;
+        }
+        
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        /* Styling untuk kolom kuning */
+        .bg-kuning {
+            background-color: #FFF3CD !important; 
+        }
+        
+        .card-kuning {
+            border-left: 4px solid #FFC107 !important;
+        }
+        
+        /* Styling untuk footer */
+        footer {
+            background-color: #343a40 !important;
+            color: white !important;
+        }
+        
+        footer h5,
+        footer p {
+            color: white !important;
+        }
+        
+        /* Efek hover untuk tabel */
+        .table-hover-effect tbody tr {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .table-hover-effect tbody tr:hover {
+            background-color: rgba(255, 193, 7, 0.15) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Efek hover untuk produk unggulan */
+        .produk-hover {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .produk-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+        }
+        
+        .produk-hover:hover .card-title {
+            color: #198754 !important;
+        }
+        
+        /* Efek hover untuk info box */
+        .info-hover {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .info-hover:hover {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            transform: scale(1.03);
+            border-color: #FFC107 !important;
+        }
+        
+        /* Animasi untuk icons */
+        .hover-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .info-hover:hover .hover-icon {
+            transform: scale(1.2);
+            color: #FFC107 !important;
+        }
+        
+        /* Highlight untuk teks penting */
+        .highlight-text {
+            position: relative;
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .highlight-text:hover {
+            background-color: rgba(255, 193, 7, 0.2);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="gambar/logo.png" alt="Logo Toko Tomari" height="50" class="me-2">
+                <span class="fw-bold">Toko Tomari</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="py-5 bg-kuning">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="mb-3 text-dark">Tentang Kami</h1>
+                    <p class="lead text-dark">Mengenal lebih dekat Toko Tomari</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-5">
+        <div class="container">
+            <!-- Visi Misi -->
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow-ringan card-kuning info-hover">
+                        <div class="card-body p-4 bg-kuning">
+                            <h3 class="text-dark mb-4">
+                                <i class="bi bi-eye me-2 text-warning hover-icon"></i>Visi
+                            </h3>
+                            <p class="lead text-dark">
+                                Menjadi toko kelontong terdepan di Limpung yang menyediakan kebutuhan pokok masyarakat dengan kualitas terbaik.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow-ringan card-kuning info-hover">
+                        <div class="card-body p-4 bg-kuning">
+                            <h3 class="text-dark mb-4">
+                                <i class="bi bi-bullseye me-2 text-warning hover-icon"></i>Misi
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="bi bi-check-circle text-warning me-2 hover-icon"></i>
+                                    Menyediakan barang kebutuhan pokok berkualitas
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check-circle text-warning me-2 hover-icon"></i>
+                                    Memberikan pelayanan terbaik dengan sikap ramah
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle text-warning me-2 hover-icon"></i>
+                                    Menjaga stok barang selalu tersedia
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk Unggulan -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center text-dark mb-5">
+                        <i class="bi bi-stars me-2 text-warning"></i>Produk Unggulan Kami
+                    </h2>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100 border-0 shadow-ringan card-kuning produk-hover">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-basket3-fill text-warning" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="card-title text-dark mb-3">Beras Premium</h5>
+                            <p class="text-dark mb-0">Beras berkualitas dengan harga terjangkau</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100 border-0 shadow-ringan card-kuning produk-hover">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-droplet-fill text-warning" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="card-title text-dark mb-3">Minyak Goreng</h5>
+                            <p class="text-dark mb-0">Minyak goreng sehat dan higienis</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100 border-0 shadow-ringan card-kuning produk-hover">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-cup-fill text-warning" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="card-title text-dark mb-3">Gula Pasir</h5>
+                            <p class="text-dark mb-0">Gula pasir berkualitas untuk kebutuhan sehari-hari</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100 border-0 shadow-ringan card-kuning produk-hover">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-egg-fill text-warning" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="card-title text-dark mb-3">Telur Ayam</h5>
+                            <p class="text-dark mb-0">Telur ayam segar langsung dari peternak</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deskripsi -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card border-0 shadow-ringan card-kuning info-hover">
+                        <div class="card-body p-5 bg-kuning">
+                            <h3 class="text-dark mb-4">
+                                <i class="bi bi-building me-2 text-warning hover-icon"></i>Deskripsi Perusahaan
+                            </h3>
+                            <p class="mb-4 text-dark">
+                                <span class="highlight-text">Toko Tomari</span> didirikan pada tahun 2000 di <span class="highlight-text">Dusun Kejiwan, Desa Wonokerso, Kecamatan Limpung, Kabupaten Batang</span>. Berawal dari sebuah warung kecil, Toko Tomari telah berkembang menjadi toko kelontong yang lengkap dan <span class="highlight-text">terpercaya</span> di wilayah Limpung.
+                            </p>
+                            <p class="mb-4 text-dark">
+                                Selama lebih dari dua dekade, kami telah melayani ribuan keluarga dengan menyediakan berbagai <span class="highlight-text">produk unggulan</span> seperti beras, minyak goreng, gula, telur, mie instan, dan berbagai sembako lainnya.
+                            </p>
+                            <div class="row mt-4">
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-center info-hover p-3 rounded">
+                                        <div class="bg-warning text-white rounded-circle p-3 me-3 hover-icon">
+                                            <i class="bi bi-calendar-check"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="text-dark mb-0">24 Tahun</h5>
+                                            <p class="text-dark mb-0 opacity-75">Pengalaman</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-center info-hover p-3 rounded">
+                                        <div class="bg-warning text-white rounded-circle p-3 me-3 hover-icon">
+                                            <i class="bi bi-people"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="text-dark mb-0">Ribuan</h5>
+                                            <p class="text-dark mb-0 opacity-75">Pelanggan Setia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
